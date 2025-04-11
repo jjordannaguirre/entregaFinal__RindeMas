@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Home</title>
+</head>
+<body>
+
+    <div class="dashboard">
+        <aside class="sidebar">
+          <h1 class="logo">RindeMás</h1>
+          <nav class="menu">
+            <button class="menu-item active">
+              <span class="icon">🏋️‍♂️</span> Ejercicio
+            </button>
+            <button class="menu-item">
+              <span class="icon">🎓</span> Estudio
+            </button>
+            <button class="menu-item">
+              <span class="icon">📖</span> Lectura
+            </button>
+          </nav>
+        </aside>
+    
+        <main class="main-content">
+          <header class="top-bar">
+            <button class="add-button">+ Nuevo Hábito</button>
+            <button class="add-button" id="logout">Logout</button>
+          </header>
+    
+          <section class="habits-grid">
+            <div class="habit-card">
+              <div class="habit-header">
+                <div>
+                  <h3>Hacer ejercicio</h3>
+                  <p class="category">Ejercicio</p>
+                </div>
+                <span class="progress-badge">43%</span>
+              </div>
+              <div class="week-days" data-habit="Hacer ejercicio">
+                <label><input type="checkbox" value="L">L</label>
+                <label><input type="checkbox" value="M">M</label>
+                <label><input type="checkbox" value="X">X</label>
+                <label><input type="checkbox" value="J">J</label>
+                <label><input type="checkbox" value="V">V</label>
+                <label><input type="checkbox" value="S">S</label>
+                <label><input type="checkbox" value="D">D</label>
+              </div>
+            </div>
+    
+            <div class="habit-card">
+              <div class="habit-header">
+                <div>
+                  <h3>Estudiar matemáticas</h3>
+                  <p class="category">Estudio</p>
+                </div>
+                <span class="progress-badge">0%</span>
+              </div>
+              <div class="week-days" data-habit="Hacer ejercicio">
+                <label><input type="checkbox" value="L">L</label>
+                <label><input type="checkbox" value="M">M</label>
+                <label><input type="checkbox" value="X">X</label>
+                <label><input type="checkbox" value="J">J</label>
+                <label><input type="checkbox" value="V">V</label>
+                <label><input type="checkbox" value="S">S</label>
+                <label><input type="checkbox" value="D">D</label>
+              </div>
+            </div>
+    
+            <div class="habit-card">
+              <div class="habit-header">
+                <div>
+                  <h3>Meditar</h3>
+                  <p class="category">Ejercicio</p>
+                </div>
+                <span class="progress-badge">29%</span>
+              </div>
+              <div class="week-days" data-habit="Hacer ejercicio">
+                <label><input type="checkbox" value="L">L</label>
+                <label><input type="checkbox" value="M">M</label>
+                <label><input type="checkbox" value="X">X</label>
+                <label><input type="checkbox" value="J">J</label>
+                <label><input type="checkbox" value="V">V</label>
+                <label><input type="checkbox" value="S">S</label>
+                <label><input type="checkbox" value="D">D</label>
+              </div>
+            </div>
+    
+            <div class="habit-card">
+              <h3>Progreso general</h3>
+              <canvas id="progressChart" width="200" height="200"></canvas>
+            </div>
+    
+            <div class="habit-card">
+              <div class="habit-header">
+                <div>
+                  <h3>Leer un libro</h3>
+                  <p class="category">Lectura</p>
+                </div>
+                <span class="progress-badge gold">71%</span>
+              </div>
+              <div class="week-days" data-habit="Hacer ejercicio">
+                <label><input type="checkbox" value="L">L</label>
+                <label><input type="checkbox" value="M">M</label>
+                <label><input type="checkbox" value="X">X</label>
+                <label><input type="checkbox" value="J">J</label>
+                <label><input type="checkbox" value="V">V</label>
+                <label><input type="checkbox" value="S">S</label>
+                <label><input type="checkbox" value="D">D</label>
+              </div>
+              <div class="bar-placeholder">[Barra de progreso]</div>
+            </div>
+          </section>
+        </main>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

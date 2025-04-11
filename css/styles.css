@@ -1,0 +1,226 @@
+:root{
+    --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+    --transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: var(--font-mono);
+}
+
+section{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+section h1{
+    font-size: 3em;
+}
+
+section h2{
+    text-align:center;
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: 2.5em
+}
+
+section form{
+    padding: 1.5em;
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    border-radius: 20px;
+    border: 2px solid rgba(0,0,0,.1);
+}
+
+section form label{
+    width: 100%;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+section form input{
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border-radius: 9px;
+    border: none;
+    outline-color: #003DFF;
+    background-color: #eee;
+}
+
+section form input[type='submit']{
+    margin-top: 1.5em;
+    background-color: #003DFF;
+    color: #fff;
+    font-family: var(--font-mono);
+    transition: var(--transition);
+} 
+
+section form input[type='submit']:active{
+    transform: scale(0.97);
+}
+
+section p{
+    margin-top: 1.5em;
+
+}
+
+
+section p a{
+    text-decoration: none;
+    color: #003DFF;
+}
+
+
+/* Home */
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    background: #fff;
+    padding: 2rem 1.5rem;
+    width: 240px;
+    box-shadow: 1px 0 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .menu-item {
+    background: none;
+    border: none;
+    padding: 0.75rem;
+    text-align: left;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .menu-item.active,
+  .menu-item:hover {
+    background: #d8e6eb;
+    font-weight: bold;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 2rem;
+  }
+  
+  .top-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+  }
+  
+  .add-button {
+    background: #70aecd;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .habits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .habit-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  }
+  
+  .habit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .habit-header h3 {
+    margin: 0;
+  }
+  
+  .category {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .progress-badge {
+    background: #e2e8ec;
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .progress-badge.gold {
+    background: #f4e1b5;
+  }
+  
+  .week-days {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    margin-top: 10px;
+  }
+  .week-days label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
+  input[type="checkbox"] {
+    accent-color: #4CAF50;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .chart-placeholder,
+  .bar-placeholder {
+    margin-top: 1rem;
+    height: 100px;
+    background: #eef1f4;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 0.9rem;
+  }
