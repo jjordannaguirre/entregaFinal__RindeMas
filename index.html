@@ -39,9 +39,26 @@
                   <h3>Hacer ejercicio</h3>
                   <p class="category">Ejercicio</p>
                 </div>
-                <span class="progress-badge">43%</span>
               </div>
               <div class="week-days" data-habit="Hacer ejercicio">
+                <label><input type="checkbox" value="L">L</label>
+                <label><input type="checkbox" value="M">M</label>
+                <label><input type="checkbox" value="X">X</label>
+                <label><input type="checkbox" value="J">J</label>
+                <label><input type="checkbox" value="V">V</label>
+                <label><input type="checkbox" value="S">S</label>
+                <label><input type="checkbox" value="D">D</label>
+              </div>
+            </div>
+    
+            <div class="habit-card">
+              <div class="habit-header">
+                <div>
+                  <h3>Leer un libro</h3>
+                  <p class="category">Lectura</p>
+                </div>
+              </div>
+              <div class="week-days" data-habit="Leer un libro">
                 <label><input type="checkbox" value="L">L</label>
                 <label><input type="checkbox" value="M">M</label>
                 <label><input type="checkbox" value="X">X</label>
@@ -58,28 +75,8 @@
                   <h3>Estudiar matemáticas</h3>
                   <p class="category">Estudio</p>
                 </div>
-                <span class="progress-badge">0%</span>
               </div>
-              <div class="week-days" data-habit="Hacer ejercicio">
-                <label><input type="checkbox" value="L">L</label>
-                <label><input type="checkbox" value="M">M</label>
-                <label><input type="checkbox" value="X">X</label>
-                <label><input type="checkbox" value="J">J</label>
-                <label><input type="checkbox" value="V">V</label>
-                <label><input type="checkbox" value="S">S</label>
-                <label><input type="checkbox" value="D">D</label>
-              </div>
-            </div>
-    
-            <div class="habit-card">
-              <div class="habit-header">
-                <div>
-                  <h3>Meditar</h3>
-                  <p class="category">Ejercicio</p>
-                </div>
-                <span class="progress-badge">29%</span>
-              </div>
-              <div class="week-days" data-habit="Hacer ejercicio">
+              <div class="week-days" data-habit="Estudiar matemáticas">
                 <label><input type="checkbox" value="L">L</label>
                 <label><input type="checkbox" value="M">M</label>
                 <label><input type="checkbox" value="X">X</label>
@@ -94,30 +91,12 @@
               <h3>Progreso general</h3>
               <canvas id="progressChart" width="200" height="200"></canvas>
             </div>
-    
-            <div class="habit-card">
-              <div class="habit-header">
-                <div>
-                  <h3>Leer un libro</h3>
-                  <p class="category">Lectura</p>
-                </div>
-                <span class="progress-badge gold">71%</span>
-              </div>
-              <div class="week-days" data-habit="Hacer ejercicio">
-                <label><input type="checkbox" value="L">L</label>
-                <label><input type="checkbox" value="M">M</label>
-                <label><input type="checkbox" value="X">X</label>
-                <label><input type="checkbox" value="J">J</label>
-                <label><input type="checkbox" value="V">V</label>
-                <label><input type="checkbox" value="S">S</label>
-                <label><input type="checkbox" value="D">D</label>
-              </div>
-              <div class="bar-placeholder">[Barra de progreso]</div>
-            </div>
           </section>
         </main>
       </div>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
