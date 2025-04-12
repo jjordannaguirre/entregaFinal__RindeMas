@@ -24,20 +24,28 @@
               <span class="icon">📖</span> Lectura
             </button>
           </nav>
+          <!-- Gráfico de Progreso dentro de la barra lateral -->
+          <div class="habit-card chart-card">
+            <h3>Progreso general</h3>
+            <canvas id="progressChart" width="200" height="200"></canvas>
+          </div>
         </aside>
     
         <main class="main-content">
           <header class="top-bar">
-            <button class="add-button">+ Nuevo Hábito</button>
-            <button class="add-button" id="logout">Logout</button>
+            <button class="add-button" id="addHabitBtn">+ Nuevo Hábito</button>
+            <button class="add-button--logout" id="logout">Logout</button>
           </header>
     
-          <section class="habits-grid">
+          <section class="habits-grid" id="habitContainer">
             <div class="habit-card">
               <div class="habit-header">
                 <div>
                   <h3>Hacer ejercicio</h3>
                   <p class="category">Ejercicio</p>
+                </div>
+                <div class="habit-actions">
+                  <button class="delete-btn">Borrar</button>
                 </div>
               </div>
               <div class="week-days" data-habit="Hacer ejercicio">
@@ -50,12 +58,15 @@
                 <label><input type="checkbox" value="D">D</label>
               </div>
             </div>
-    
+            
             <div class="habit-card">
               <div class="habit-header">
                 <div>
                   <h3>Leer un libro</h3>
                   <p class="category">Lectura</p>
+                </div>
+                <div class="habit-actions">
+                  <button class="delete-btn">Borrar</button>
                 </div>
               </div>
               <div class="week-days" data-habit="Leer un libro">
@@ -68,15 +79,18 @@
                 <label><input type="checkbox" value="D">D</label>
               </div>
             </div>
-    
+            
             <div class="habit-card">
               <div class="habit-header">
                 <div>
-                  <h3>Estudiar matemáticas</h3>
+                  <h3>Estudiar matematicas</h3>
                   <p class="category">Estudio</p>
                 </div>
+                <div class="habit-actions">
+                  <button class="delete-btn">Borrar</button>
+                </div>
               </div>
-              <div class="week-days" data-habit="Estudiar matemáticas">
+              <div class="week-days" data-habit="Estudiar matematicas">
                 <label><input type="checkbox" value="L">L</label>
                 <label><input type="checkbox" value="M">M</label>
                 <label><input type="checkbox" value="X">X</label>
@@ -85,11 +99,6 @@
                 <label><input type="checkbox" value="S">S</label>
                 <label><input type="checkbox" value="D">D</label>
               </div>
-            </div>
-    
-            <div class="habit-card">
-              <h3>Progreso general</h3>
-              <canvas id="progressChart" width="200" height="200"></canvas>
             </div>
           </section>
         </main>
